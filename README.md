@@ -1,5 +1,5 @@
 📡 IoT Topology Monitoring — README
-Projet de supervision et de migration automatique de topologie pour une infrastructure IoT déployée sur Kubernetes avec Istio.
+Projet de supervision et de migrations automatiques de topologie pour une infrastructure IoT déployée sur Kubernetes avec Istio.
 
 🗂️ Structure du projet
 .
