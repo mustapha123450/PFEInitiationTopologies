@@ -1,0 +1,23 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: virtualservice-manager
+  namespace: iot-topology
+rules:
+- apiGroups: ["networking.istio.io"]
+  resources: ["virtualservices"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: manage-virtualservices
+  namespace: iot-topology
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: iot-topology
+roleRef:
+  kind: Role
+  name: virtualservice-manager
+  apiGroup: rbac.authorization.k8s.io

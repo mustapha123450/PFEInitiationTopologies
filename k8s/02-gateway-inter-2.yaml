@@ -1,0 +1,48 @@
+# 02-gateway-inter-2.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iot-gateway-inter-2
+  namespace: iot-topology
+  labels:
+    app: iot-gateway-inter
+    instance: inter-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iot-gateway-inter
+      instance: inter-2
+  template:
+    metadata:
+      labels:
+        app: iot-gateway-inter
+        instance: inter-2
+    spec:
+      containers:
+      - name: gateway
+        image: iot-topology:latest
+        imagePullPolicy: Never
+        command: ["node", "gateway.js"]
+        args:
+          - "--local_ip=0.0.0.0"
+          - "--local_port=8182"
+          - "--local_name=gwi2"
+          - "--remote_ip=iot-server"
+          - "--remote_port=8080"
+          - "--remote_name=srv"
+        ports:
+        - containerPort: 8182
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: iot-gateway-inter-2
+  namespace: iot-topology
+spec:
+  selector:
+    app: iot-gateway-inter
+    instance: inter-2
+  ports:
+    - port: 8182
+      targetPort: 8182

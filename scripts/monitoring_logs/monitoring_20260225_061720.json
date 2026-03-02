@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-02-25T06:17:20.465860",
+  "cycle": 2,
+  "pod_status": [],
+  "pod_metrics": [],
+  "gateway_configs": {
+    "gateways_finales": {},
+    "gateways_inter": {},
+    "timestamp": "2026-02-25T06:17:19.336053"
+  },
+  "traffic_metrics": {
+    "qps": [],
+    "total_requests": [],
+    "latency": {
+      "p50": [],
+      "p95": [],
+      "p99": []
+    },
+    "error_rates": {
+      "errors": [],
+      "total": []
+    },
+    "bandwidth": [],
+    "connections": []
+  },
+  "endpoints": {}
+}

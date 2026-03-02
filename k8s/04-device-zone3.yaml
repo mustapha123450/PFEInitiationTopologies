@@ -1,0 +1,93 @@
+# Devices pour Gateway-final-3 (GF3) - Zone 3
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: device-gf3-1
+  namespace: iot-topology
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: device-gf3-1
+  template:
+    metadata:
+      labels:
+        app: device-gf3-1
+        zone: zone-3
+        gateway: gf3
+    spec:
+      containers:
+      - name: device
+        image: iot-topology:latest
+        imagePullPolicy: Never
+        command: ["node", "device.js"]
+        args:
+          - "--local_ip=0.0.0.0"
+          - "--local_port=9007"
+          - "--local_name=device-gf3-1"
+          - "--remote_ip=iot-gateway-final-3"
+          - "--remote_port=8283"
+          - "--remote_name=gwf3"
+          - "--send_period=3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: device-gf3-2
+  namespace: iot-topology
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: device-gf3-2
+  template:
+    metadata:
+      labels:
+        app: device-gf3-2
+        zone: zone-3
+        gateway: gf3
+    spec:
+      containers:
+      - name: device
+        image: iot-topology:latest
+        imagePullPolicy: Never
+        command: ["node", "device.js"]
+        args:
+          - "--local_ip=0.0.0.0"
+          - "--local_port=9008"
+          - "--local_name=device-gf3-2"
+          - "--remote_ip=iot-gateway-final-3"
+          - "--remote_port=8283"
+          - "--remote_name=gwf3"
+          - "--send_period=3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: device-gf3-3
+  namespace: iot-topology
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: device-gf3-3
+  template:
+    metadata:
+      labels:
+        app: device-gf3-3
+        zone: zone-3
+        gateway: gf3
+    spec:
+      containers:
+      - name: device
+        image: iot-topology:latest
+        imagePullPolicy: Never
+        command: ["node", "device.js"]
+        args:
+          - "--local_ip=0.0.0.0"
+          - "--local_port=9009"
+          - "--local_name=device-gf3-3"
+          - "--remote_ip=iot-gateway-final-3"
+          - "--remote_port=8283"
+          - "--remote_name=gwf3"
+          - "--send_period=3000"

@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iot-gateway-inter-1  # ← Changé !
+  namespace: iot-topology
+  labels:
+    app: iot-gateway-inter
+    instance: inter-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iot-gateway-inter
+      instance: inter-1
+  template:
+    metadata:
+      labels:
+        app: iot-gateway-inter
+        instance: inter-1
+    spec:
+      containers:
+      - name: gateway
+        image: iot-topology:latest
+        imagePullPolicy: Never
+        command: ["node", "gateway.js"]
+        args:
+          - "--local_ip=0.0.0.0"
+          - "--local_port=8181"
+          - "--local_name=gwi1"        # ← Changé (gwi1 au lieu de gwi)
+          - "--remote_ip=iot-server"
+          - "--remote_port=8080"
+          - "--remote_name=srv"
+        ports:
+        - containerPort: 8181
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: iot-gateway-inter-1  # ← Changé !
+  namespace: iot-topology
+spec:
+  selector:
+    app: iot-gateway-inter
+    instance: inter-1
+  ports:
+    - port: 8181
+      targetPort: 8181
+      protocol: TCP
+  type: ClusterIP

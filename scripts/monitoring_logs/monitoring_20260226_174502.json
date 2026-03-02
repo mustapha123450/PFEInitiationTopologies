@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-02-26T17:45:02.859720",
+  "cycle": 87,
+  "topology": "modifiee",
+  "migration_in_progress": false,
+  "cpu_metrics": [],
+  "gateway_metrics": {
+    "gateways_finales": {
+      "iot-gateway-final-1": {
+        "qps": 1.9856390244430024,
+        "latency_p95": 93.57144154814297,
+        "bandwidth_in": 1310.1844036290531,
+        "bandwidth_out": 396.5686493239927,
+        "error_rate": 0.0
+      },
+      "iot-gateway-final-2": {
+        "qps": 2.0078230918117965,
+        "latency_p95": 22.30003533275729,
+        "bandwidth_in": 1310.134236514545,
+        "bandwidth_out": 1174.6611629833913,
+        "error_rate": 0
+      },
+      "iot-gateway-final-3": {
+        "qps": 1.88609145878884,
+        "latency_p95": 21.347572950041243,
+        "bandwidth_in": 1279.0558367603578,
+        "bandwidth_out": 1174.6611629833913,
+        "error_rate": 0.0
+      }
+    },
+    "gateways_inter": {
+      "iot-gateway-inter-1": {
+        "qps": 4.015885058444431,
+        "latency_p95": 9.699993931518975,
+        "bandwidth_in": 2841.2783252092217,
+        "bandwidth_out": 2248.945806653131,
+        "error_rate": 0.0
+      },
+      "iot-gateway-inter-2": {
+        "qps": 1.0039712641113738,
+        "latency_p95": 91.96428571428571,
+        "bandwidth_in": 266.0523849895141,
+        "bandwidth_out": 0.0,
+        "error_rate": 100.0
+      }
+    }
+  },
+  "alerts": {
+    "critical": [],
+    "warning": [],
+    "info": []
+  },
+  "migration_triggered": false
+}

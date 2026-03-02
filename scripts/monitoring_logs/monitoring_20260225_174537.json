@@ -1,0 +1,415 @@
+{
+  "timestamp": "2026-02-25T17:45:37.250058",
+  "cycle": 10,
+  "topology": "nominale",
+  "migration_in_progress": false,
+  "cpu_metrics": [
+    {
+      "name": "device-gf1-1-97f6bb7c7-bdtj8",
+      "type": "device",
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.532145,
+          "cpu_raw": "3532145n",
+          "memory_mb": 44.828125,
+          "memory_raw": "45904Ki"
+        },
+        {
+          "name": "device",
+          "cpu_millicores": 0.732604,
+          "cpu_raw": "732604n",
+          "memory_mb": 14.34765625,
+          "memory_raw": "14692Ki"
+        }
+      ]
+    },
+    {
+      "name": "device-gf1-2-6dc5d7bc4-zjnmf",
+      "type": "device",
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.927181,
+          "cpu_raw": "3927181n",
+          "memory_mb": 46.0234375,
+          "memory_raw": "47128Ki"
+        },
+        {
+          "name": "device",
+          "cpu_millicores": 0.964941,
+          "cpu_raw": "964941n",
+          "memory_mb": 15.39453125,
+          "memory_raw": "15764Ki"
+        }
+      ]
+    },
+    {
+      "name": "device-gf1-3-866965d5f5-mtfxh",
+      "type": "device",
+      "containers": [
+        {
+          "name": "device",
+          "cpu_millicores": 0.817582,
+          "cpu_raw": "817582n",
+          "memory_mb": 13.1875,
+          "memory_raw": "13504Ki"
+        },
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.318781,
+          "cpu_raw": "3318781n",
+          "memory_mb": 44.30078125,
+          "memory_raw": "45364Ki"
+        }
+      ]
+    },
+    {
+      "name": "device-gf2-1-5c6cf686ff-ngg4c",
+      "type": "device",
+      "containers": [
+        {
+          "name": "device",
+          "cpu_millicores": 0.93722,
+          "cpu_raw": "937220n",
+          "memory_mb": 16.171875,
+          "memory_raw": "16560Ki"
+        },
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.823305,
+          "cpu_raw": "3823305n",
+          "memory_mb": 44.10546875,
+          "memory_raw": "45164Ki"
+        }
+      ]
+    },
+    {
+      "name": "device-gf2-2-77f5f9b6cd-95bts",
+      "type": "device",
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.294029,
+          "cpu_raw": "3294029n",
+          "memory_mb": 42.94140625,
+          "memory_raw": "43972Ki"
+        },
+        {
+          "name": "device",
+          "cpu_millicores": 0.762695,
+          "cpu_raw": "762695n",
+          "memory_mb": 12.890625,
+          "memory_raw": "13200Ki"
+        }
+      ]
+    },
+    {
+      "name": "device-gf2-3-76768476b9-pg8sk",
+      "type": "device",
+      "containers": [
+        {
+          "name": "device",
+          "cpu_millicores": 0.694373,
+          "cpu_raw": "694373n",
+          "memory_mb": 17.02734375,
+          "memory_raw": "17436Ki"
+        },
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.35877,
+          "cpu_raw": "3358770n",
+          "memory_mb": 45.38671875,
+          "memory_raw": "46476Ki"
+        }
+      ]
+    },
+    {
+      "name": "device-gf3-1-78c85cf677-d6dxs",
+      "type": "device",
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.454873,
+          "cpu_raw": "3454873n",
+          "memory_mb": 41.390625,
+          "memory_raw": "42384Ki"
+        },
+        {
+          "name": "device",
+          "cpu_millicores": 0.757962,
+          "cpu_raw": "757962n",
+          "memory_mb": 14.3828125,
+          "memory_raw": "14728Ki"
+        }
+      ]
+    },
+    {
+      "name": "device-gf3-2-5774d89746-vvrjg",
+      "type": "device",
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.382722,
+          "cpu_raw": "3382722n",
+          "memory_mb": 42.7890625,
+          "memory_raw": "43816Ki"
+        },
+        {
+          "name": "device",
+          "cpu_millicores": 0.723961,
+          "cpu_raw": "723961n",
+          "memory_mb": 13.52734375,
+          "memory_raw": "13852Ki"
+        }
+      ]
+    },
+    {
+      "name": "device-gf3-3-6dc46955bc-xvkrm",
+      "type": "device",
+      "containers": [
+        {
+          "name": "device",
+          "cpu_millicores": 0.773047,
+          "cpu_raw": "773047n",
+          "memory_mb": 16.515625,
+          "memory_raw": "16912Ki"
+        },
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 4.720371,
+          "cpu_raw": "4720371n",
+          "memory_mb": 44.734375,
+          "memory_raw": "45808Ki"
+        }
+      ]
+    },
+    {
+      "name": "iot-application-zone1-79764bcb97-gd8j4",
+      "type": "application",
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.404961,
+          "cpu_raw": "3404961n",
+          "memory_mb": 45.390625,
+          "memory_raw": "46480Ki"
+        },
+        {
+          "name": "application",
+          "cpu_millicores": 0.450352,
+          "cpu_raw": "450352n",
+          "memory_mb": 11.98828125,
+          "memory_raw": "12276Ki"
+        }
+      ]
+    },
+    {
+      "name": "iot-application-zone2-68f75455ff-zkz9n",
+      "type": "application",
+      "containers": [
+        {
+          "name": "application",
+          "cpu_millicores": 0.501844,
+          "cpu_raw": "501844n",
+          "memory_mb": 11.84375,
+          "memory_raw": "12128Ki"
+        },
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.895188,
+          "cpu_raw": "3895188n",
+          "memory_mb": 45.1484375,
+          "memory_raw": "46232Ki"
+        }
+      ]
+    },
+    {
+      "name": "iot-application-zone3-7c87cd9b77-qz4m2",
+      "type": "application",
+      "containers": [
+        {
+          "name": "application",
+          "cpu_millicores": 0.42412,
+          "cpu_raw": "424120n",
+          "memory_mb": 11.8203125,
+          "memory_raw": "12104Ki"
+        },
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.46848,
+          "cpu_raw": "3468480n",
+          "memory_mb": 44.64453125,
+          "memory_raw": "45716Ki"
+        }
+      ]
+    },
+    {
+      "name": "iot-gateway-final-1-5c47ff88c5-bq4xh",
+      "type": "gateway_finale",
+      "containers": [
+        {
+          "name": "gateway",
+          "cpu_millicores": 4.437479,
+          "cpu_raw": "4437479n",
+          "memory_mb": 32.56640625,
+          "memory_raw": "33348Ki"
+        },
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 5.270112,
+          "cpu_raw": "5270112n",
+          "memory_mb": 46.7890625,
+          "memory_raw": "47912Ki"
+        }
+      ]
+    },
+    {
+      "name": "iot-gateway-final-2-c7884f86-4hqjx",
+      "type": "gateway_finale",
+      "containers": [
+        {
+          "name": "gateway",
+          "cpu_millicores": 2.775383,
+          "cpu_raw": "2775383n",
+          "memory_mb": 28.83984375,
+          "memory_raw": "29532Ki"
+        },
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 5.740763,
+          "cpu_raw": "5740763n",
+          "memory_mb": 45.78125,
+          "memory_raw": "46880Ki"
+        }
+      ]
+    },
+    {
+      "name": "iot-gateway-final-3-54d4fc98c7-clts8",
+      "type": "gateway_finale",
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 4.883607,
+          "cpu_raw": "4883607n",
+          "memory_mb": 45.37890625,
+          "memory_raw": "46468Ki"
+        },
+        {
+          "name": "gateway",
+          "cpu_millicores": 3.112589,
+          "cpu_raw": "3112589n",
+          "memory_mb": 28.703125,
+          "memory_raw": "29392Ki"
+        }
+      ]
+    },
+    {
+      "name": "iot-gateway-inter-1-5959459d44-ktmbm",
+      "type": "gateway_inter",
+      "containers": [
+        {
+          "name": "gateway",
+          "cpu_millicores": 7.801719,
+          "cpu_raw": "7801719n",
+          "memory_mb": 31.68359375,
+          "memory_raw": "32444Ki"
+        },
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 7.056277,
+          "cpu_raw": "7056277n",
+          "memory_mb": 41.7421875,
+          "memory_raw": "42744Ki"
+        }
+      ]
+    },
+    {
+      "name": "iot-gateway-inter-2-79f8db59c6-9thkk",
+      "type": "gateway_inter",
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 3.346499,
+          "cpu_raw": "3346499n",
+          "memory_mb": 44.2578125,
+          "memory_raw": "45320Ki"
+        },
+        {
+          "name": "gateway",
+          "cpu_millicores": 0.003923,
+          "cpu_raw": "3923n",
+          "memory_mb": 28.92578125,
+          "memory_raw": "29620Ki"
+        }
+      ]
+    },
+    {
+      "name": "iot-server-6bcff59488-r6cn6",
+      "type": "server",
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "cpu_millicores": 6.437698,
+          "cpu_raw": "6437698n",
+          "memory_mb": 48.50390625,
+          "memory_raw": "49668Ki"
+        },
+        {
+          "name": "server",
+          "cpu_millicores": 3.356068,
+          "cpu_raw": "3356068n",
+          "memory_mb": 45.83984375,
+          "memory_raw": "46940Ki"
+        }
+      ]
+    }
+  ],
+  "gateway_metrics": {
+    "gateways_finales": {
+      "iot-gateway-final-1": {
+        "qps": 3.4932612117906148,
+        "latency_p95": 24.884662796461804,
+        "bandwidth_in": 2384.9322824096616,
+        "bandwidth_out": 2188.864127082048,
+        "error_rate": 0
+      },
+      "iot-gateway-final-2": {
+        "qps": 2.994948685983092,
+        "latency_p95": 24.503442022114335,
+        "bandwidth_in": 1979.3205882901095,
+        "bandwidth_out": 2101.417649618053,
+        "error_rate": 0
+      },
+      "iot-gateway-final-3": {
+        "qps": 3.1509911985382497,
+        "latency_p95": 31.641722723828032,
+        "bandwidth_in": 2040.1241690023487,
+        "bandwidth_out": 2109.9190772612274,
+        "error_rate": 0
+      }
+    },
+    "gateways_inter": {
+      "iot-gateway-inter-1": {
+        "qps": 10.591789057907842,
+        "latency_p95": 20.03822393796255,
+        "bandwidth_in": 7783.800372379253,
+        "bandwidth_out": 4923.66465184651,
+        "error_rate": 0
+      },
+      "iot-gateway-inter-2": {
+        "qps": 0.0,
+        "latency_p95": NaN,
+        "bandwidth_in": 0.0,
+        "bandwidth_out": 0.0,
+        "error_rate": 0
+      }
+    }
+  },
+  "alerts": {
+    "critical": [],
+    "warning": [],
+    "info": []
+  },
+  "migration_triggered": false
+}

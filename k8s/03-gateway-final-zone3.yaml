@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iot-gateway-final-3
+  namespace: iot-topology
+  labels:
+    app: iot-gateway-final
+    zone: zone-3
+    gateway-id: gf3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iot-gateway-final
+      zone: zone-3
+  template:
+    metadata:
+      labels:
+        app: iot-gateway-final
+        zone: zone-3
+        gateway-id: gf3
+    spec:
+      containers:
+      - name: gateway
+        image: iot-topology:latest
+        imagePullPolicy: Never
+        command: ["node", "gateway.js"]
+        args:
+          - "--local_ip=0.0.0.0"
+          - "--local_port=8283"
+          - "--local_name=gwf3"
+          - "--remote_ip=iot-gateway-inter-1"
+          - "--remote_port=8181"
+          - "--remote_name=gwi1"
+        ports:
+        - containerPort: 8283
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: iot-gateway-final-3
+  namespace: iot-topology
+spec:
+  selector:
+    gateway-id: gf3
+  ports:
+    - port: 8283
+      targetPort: 8283
+      protocol: TCP
+  type: ClusterIP

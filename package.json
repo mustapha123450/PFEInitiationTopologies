@@ -1,0 +1,18 @@
+{
+  "name": "iot-topology",
+  "version": "0.2.0",
+  "description": "IoT distributed topology with Server, Gateway, Device, Application",
+  "scripts": {
+    "server": "node server.js --local_ip \"127.0.0.1\" --local_port 8080 --local_name \"srv\"",
+    "gateway-inter": "node gateway.js --local_ip \"127.0.0.1\" --local_port 8181 --local_name \"gwi\" --remote_ip \"127.0.0.1\" --remote_port 8080 --remote_name \"srv\"",
+    "gateway-final": "node gateway.js --local_ip \"127.0.0.1\" --local_port 8282 --local_name \"gwf1\" --remote_ip \"127.0.0.1\" --remote_port 8181 --remote_name \"gwi\"",
+    "device": "node device.js --local_ip \"127.0.0.1\" --local_port 9001 --local_name \"dev1\" --remote_ip \"127.0.0.1\" --remote_port 8282 --remote_name \"gwf1\" --send_period 3000",
+    "application": "node application.js --remote_ip \"127.0.0.1\" --remote_port 8080 --device_name \"dev1\" --send_period 5000"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "request": "^2.88.2",
+    "yargs": "^17.7.2",
+    "systeminformation": "^5.21.0"
+  }
+}
